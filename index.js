@@ -21,7 +21,7 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'shape',
+    name: 'shapeType',
     message: 'Select a shape:',
     choices: ['Triangle', 'Circle', 'Square']
   },
@@ -32,27 +32,26 @@ const questions = [
   }
 ];
 
-inquirer.prompt(questions).then(answers => {
+inquirer.prompt(questions).then(({text,textColor, shapeType, shapeColor}) => {
   let shape;
 
-  switch (answers.shape) {
+  switch (shapeType) {
     case 'Triangle':
       shape = new Triangle();
       break;
     case 'Circle':
       shape = new Circle();
       break;
-    case 'Square':
+    default:
       shape = new Square();
       break;
-    default:
-      break;
+  
   }
-shape.setColor(answers.shapeColor)
+shape.setColor(shapeColor)
 const svg = new SVG()
-svg.setText(answers.textColor)
+svg.setText(text, textColor)
 svg.setShape(shape)
-return writeFile("logo.svg", svg.render())
+return writeFile("./examples/logo.svg", svg.render())
 
 })
 .then(() => console.log("logo created"))

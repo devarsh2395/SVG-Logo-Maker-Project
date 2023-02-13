@@ -48,7 +48,7 @@ npm install
 
 ## Usage
 
-Below is the link to the walkthrough video which will demonstrates the functionality of the README generator.
+Below is the link to the walkthrough video which will demonstrates the functionality.
 
 [Link to the walkthrough video]()
 
