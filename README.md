@@ -50,7 +50,7 @@ npm install
 
 Below is the link to the walkthrough video which will demonstrates the functionality.
 
-[Link to the walkthrough video]()
+[Link to the walkthrough video](https://drive.google.com/file/d/1TGyNS3Ol1vtc5JJ4h5jbKpI1t4sUSxYs/view)
 
 ## Contributing
 
