@@ -54,6 +54,6 @@ svg.setShape(shape)
 return writeFile("./examples/logo.svg", svg.render())
 
 })
-.then(() => console.log("logo created"))
+.then(() => console.log("Generated logo.svg"))
 
 .catch(err => console.log(err));
